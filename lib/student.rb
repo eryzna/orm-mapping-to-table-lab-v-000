@@ -2,9 +2,10 @@ class Student
  attr_accessor :grade, :name
  attr_reader :id
 
- def initialize (name, grade)
+ def initialize (name, grade id=nil)
    @grade=grade
    @name=name
+   @id=id
  end
 
  def self.create_table
